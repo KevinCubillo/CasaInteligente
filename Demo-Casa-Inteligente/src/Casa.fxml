@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <ImageView fitHeight="718.0" fitWidth="1069.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/fondo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="118.0" layoutX="43.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Lavadora%20Whirpool.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="153.0" layoutX="196.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Televisor%20samsung.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="136.0" layoutX="649.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Radio%20Sony.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="124.0" layoutX="863.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Estufa%20Mabe.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="122.0" fitWidth="136.0" layoutX="40.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Licuadora%20Oster.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="122.0" layoutX="232.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/plancha.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="136.0" fitWidth="146.0" layoutX="406.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/intercomunicador.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="146.0" layoutX="654.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/batidora.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="158.0" layoutX="406.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Aire%20Acondiconado%20Whirpool.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="849.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/horno.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="screen" editable="false" layoutX="217.0" layoutY="562.0" prefHeight="76.0" prefWidth="603.0" />
+      <MenuButton layoutX="40.0" layoutY="175.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="122.0" text="Lavadora">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#encender1" text="Encerder" />
+          <MenuItem mnemonicParsing="false" onAction="#apagar1" text="Apagar" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="226.0" layoutY="175.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="122.0" text="Televisor">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#encender2" text="Encender" />
+            <MenuItem mnemonicParsing="false" onAction="#apagar2" text="Apagar" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="406.0" layoutY="175.0" mnemonicParsing="false" onAction="#apagar3" prefHeight="23.0" prefWidth="158.0" text="Aire acondicionado">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#encender3" text="Encender" />
+            <MenuItem mnemonicParsing="false" onAction="#apagar3" text="Apagar" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="649.0" layoutY="175.0" mnemonicParsing="false" onAction="#encender5" prefHeight="23.0" prefWidth="122.0" text="Radio">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#encender4" text="Encender" />
+            <MenuItem mnemonicParsing="false" onAction="#apagar4" text="Apagar" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="860.0" layoutY="175.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="122.0" text="Estufa">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#encender5" text="Encender" />
+            <MenuItem mnemonicParsing="false" onAction="#apagar5" text="Apagar" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="46.0" layoutY="476.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="110.0" text="Licuadora">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#encender6" text="Encender" />
+            <MenuItem mnemonicParsing="false" onAction="#apagar6" text="Apagar" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="232.0" layoutY="476.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="110.0" text="Plancha">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#encender7" text="Encender" />
+            <MenuItem mnemonicParsing="false" onAction="#apagar7" text="Apagar" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="406.0" layoutY="476.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="158.0" text="Intercomunicador">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#encender8" text="Encender" />
+            <MenuItem mnemonicParsing="false" onAction="#apagar8" text="Apagar" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="839.0" layoutY="476.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="110.0" text="Horno">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#encender10" text="Encender" />
+            <MenuItem mnemonicParsing="false" onAction="#apagar10" text="Apagar" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="655.0" layoutY="476.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="110.0" text="Batidora">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#encender9" text="Encender" />
+            <MenuItem mnemonicParsing="false" onAction="#apagar9" text="Apagar" />
+         </items>
+      </MenuButton>
+   </children>
+</Pane>
